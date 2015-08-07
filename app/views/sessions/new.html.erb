@@ -1,0 +1,17 @@
+<div class="banner">
+	<h1>One account. All of Portal</h1>
+	<h2>Sign in to continue to Portal</h2>
+</div>
+<div class="card signin-card">
+	<div class="circle-mask kilop">
+		<canvas id="canvas" class="circle" width="96" height="96"></canvas>
+	</div>
+	<%= form_tag sessions_path do %>
+		<%= text_field_tag :username, "" ,  :placeholder => "Enter Your Username" , :id => "Email" %>
+		<%= password_field_tag :password , "" , :placeholder => "Password" , :class => "martop" , :id => "Passwd" %>
+		<%= submit_tag "Sign In" , :class => "rc-button rc-button-submit kilop" , :id => "signIn" %>
+	<% end %>
+</div>
+
+
+	
