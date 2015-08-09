@@ -1,7 +1,14 @@
 <section class="level_form">
-	<%= form_tag levels_path do %>
-		<%= text_field_tag :level %>
-		<br>
-		<%= submit_tag "Create" , :class => "rc-button rc-button-submit kilop"%>
+	<%= form_for @level do |f| %>
+	  <%= f.text_field :name %>
+	  <br>
+	  <%= f.submit "Create", :class => "rc-button rc-button-submit kilop"%>
 	<% end %>
 </section>
+
+<% if !@alevel.blank? %>
+	  <% for item in @alevel %>
+	    <%= item.name %>
+	    <%= item.id %>
+	  <% end %>
+	<% end %>
