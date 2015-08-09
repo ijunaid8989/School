@@ -1,10 +1,60 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster);
 *{
 	margin: 0 auto;
 }
 
 #Dashboard{
-	width: 100%;
+	width: 960px;
 	height: auto;
 	overflow: hidden;
 	border: solid 1px black;
+	padding: 10px 0px;
+	margin-top: 10px;
+}
+
+.central_part{
+	text-align: center;
+	font-size: 32px;
+	padding: 1px;
+	font-weight: 300;
+	font-family: 'Open Sans', arial;
+}
+
+.samli_link{
+	font-size: 16px;
+	padding: 10px;
+	overflow: hidden;
+	display: inline-block;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+}
+
+.menu_void{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	background-color: #444d58;
+	color: #333333;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.menu_void ul{
+	width: 960px;
+	font-family: 'Open Sans', arial;
+}
+
+.menu_void ul li{
+	list-style: none;
+}
+
+.menu_void ul li a {
+	font-size: 14px;
+    font-weight: normal;
+    padding: 16px 18px 15px 18px;
+    float: left;
+    text-decoration: none;
+    color: #f1f1f1;
+    background-color: #4E5966;
 }
