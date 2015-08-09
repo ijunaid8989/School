@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'levels/new'
+
   get 'dashboard/index'
 
   get 'sessions/new'
