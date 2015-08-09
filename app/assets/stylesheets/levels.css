@@ -1,0 +1,11 @@
+*{
+	margin: 0 auto;
+}
+
+.level_form{
+	width: 700px;
+	overflow: hidden;
+	height: auto;
+	margin-top: 20px;
+}
+

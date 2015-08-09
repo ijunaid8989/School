@@ -1,2 +1,7 @@
-<h1>Levels#new</h1>
-<p>Find me in app/views/levels/new.html.erb</p>
+<section class="level_form">
+	<%= form_tag levels_path do %>
+		<%= text_field_tag :level %>
+		<br>
+		<%= submit_tag "Create" , :class => "rc-button rc-button-submit kilop"%>
+	<% end %>
+</section>

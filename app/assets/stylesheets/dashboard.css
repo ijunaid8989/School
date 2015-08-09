@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lobster);
+
 *{
 	margin: 0 auto;
 }
@@ -47,10 +47,12 @@
 
 .menu_void ul li{
 	list-style: none;
+
 }
 
 .menu_void ul li a {
 	font-size: 14px;
+	margin-right: 5px;
     font-weight: normal;
     padding: 16px 18px 15px 18px;
     float: left;
