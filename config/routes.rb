@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   resources :users
   resources :sessions
   resources :levels
+  resources :subjects
 
   root "sessions#new"
 
@@ -24,6 +25,8 @@ Rails.application.routes.draw do
   get "dashboard" => "dashboard#index" , :as => "dashboard"
 
   get "addlevel" => "levels#new" , :as => "addlevel"
+
+  get "addsubject" => "subjects#new" , :as => "addsubject"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
