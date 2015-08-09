@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'subjects/new'
+
   get 'levels/new'
 
   get 'dashboard/index'

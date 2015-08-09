@@ -11,10 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150809075715) do
+ActiveRecord::Schema.define(version: 20150809143604) do
 
   create_table "levels", force: :cascade do |t|
     t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "subjects", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "level_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
