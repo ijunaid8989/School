@@ -1,2 +1,9 @@
-<h1>Drups#new</h1>
-<p>Find me in app/views/drups/new.html.erb</p>
+<section class="level_form">
+	<%= form_for @drup do |f| %>
+	  <%= f.text_field :name %>
+	  <br>
+	  <%= f.select :level_id , options_from_collection_for_select(@allevel ,"id" , "name") %>
+	  <br>
+	  <%= f.submit "Create", :class => "rc-button rc-button-submit kilop"%>
+	<% end %>
+</section>

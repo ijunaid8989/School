@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   resources :sessions
   resources :levels
   resources :subjects
+  resources :drups
 
   root "sessions#new"
 
@@ -30,6 +31,7 @@ Rails.application.routes.draw do
 
   get "addsubject" => "subjects#new" , :as => "addsubject"
 
+  get "addclass" => "drups#new" , :as => "addclass"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
