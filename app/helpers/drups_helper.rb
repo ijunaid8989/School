@@ -1,0 +1,2 @@
+module DrupsHelper
+end

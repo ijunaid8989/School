@@ -11,9 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150810071810) do
+ActiveRecord::Schema.define(version: 20150810074331) do
 
-  create_table "klasses", force: :cascade do |t|
+  create_table "drups", force: :cascade do |t|
     t.string   "name"
     t.integer  "level_id"
     t.datetime "created_at", null: false

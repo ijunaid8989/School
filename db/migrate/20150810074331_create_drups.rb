@@ -1,6 +1,6 @@
-class CreateKlasses < ActiveRecord::Migration
+class CreateDrups < ActiveRecord::Migration
   def change
-    create_table :klasses do |t|
+    create_table :drups do |t|
       t.string :name
       t.integer :level_id
 
