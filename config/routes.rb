@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'klass/new'
+
   get 'subjects/new'
 
   get 'levels/new'

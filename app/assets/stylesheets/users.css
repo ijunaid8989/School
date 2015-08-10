@@ -157,14 +157,14 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-input[type=email]:hover, input[type=number]:hover, input[type=password]:hover, input[type=tel]:hover, input[type=text]:hover, input[type=url]:hover {
+.card input[type=email]:hover, input[type=number]:hover, input[type=password]:hover, input[type=tel]:hover, input[type=text]:hover, input[type=url]:hover {
     border: 1px solid #b9b9b9;
     border-top: 1px solid #a0a0a0;
     -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
     -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
     box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
 }
-input[type=email], input[type=number], input[type=password], input[type=tel], input[type=text], input[type=url] {
+.card input[type=email], input[type=number], input[type=password], input[type=tel], input[type=text], input[type=url] {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
