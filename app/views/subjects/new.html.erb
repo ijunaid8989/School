@@ -1,9 +1,11 @@
 <section class="level_form">
 	<%= form_for @subject do |f| %>
-	  <%= f.text_area :name , size: "30x10"%>
-	  <br>
-	  <%= f.select :level_id , options_from_collection_for_select(@allevel ,"id" , "name") %>
-	  <br>
-	  <%= f.submit "Create", :class => "rc-button rc-button-submit kilop"%>
+		<%= f.label :subjectname, "Subject name :" %>
+		<%= f.text_area :name , size: "30x10"%>
+		<br>
+		<%= f.label :levelname, "Level name :" %>
+		<%= f.select :level_id , options_from_collection_for_select(@allevel ,"id" , "name") %>
+		<br>
+		<%= f.submit "Create", :class => "rc-button rc-button-submit kilop"%>
 	<% end %>
 </section>

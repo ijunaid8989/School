@@ -1,6 +1,7 @@
 <section class="level_form">
 	<%= form_for @level do |f| %>
-	  <%= f.text_field :name %>
+	  <%= f.label :LevelName, "Level Name :" %>
+	  <%= f.text_field :name, :class => "ad_o o_ad" %>
 	  <br>
 	  <%= f.submit "Create", :class => "rc-button rc-button-submit kilop"%>
 	<% end %>

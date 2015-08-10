@@ -1,7 +1,9 @@
 <section class="level_form">
 	<%= form_for @drup do |f| %>
-	  <%= f.text_field :name %>
+	  <%= f.label :classname, "Class name :" %>
+	  <%= f.text_field :name , :class => "ad_o o_ad" %>
 	  <br>
+	  <%= f.label :levelname, "Level name :" %>
 	  <%= f.select :level_id , options_from_collection_for_select(@allevel ,"id" , "name") %>
 	  <br>
 	  <%= f.submit "Create", :class => "rc-button rc-button-submit kilop"%>
